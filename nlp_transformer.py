@@ -1,5 +1,6 @@
 import streamlit as st
 import tensorflow as tf
+from tensorflow import keras
 import re
 from huggingface_hub import hf_hub_download
 from transformers import AutoTokenizer
@@ -16,8 +17,10 @@ model_path = hf_hub_download(
 def load_model_cached(path):
     custom_objects = {'TFBertModel': TFBertModel}
 
-    with tf.keras.utils.custom_object_scope(custom_objects):
-        model = tf.keras.models.load_model(path)
+    model = keras.models.load_model(
+        model_path,
+        custom_objects=custom_objects
+    )
     
     return model
 
@@ -203,4 +206,5 @@ def app():
             display_result_card(pred_class)
         else:
             st.error("Harap masukkan teks terlebih dahulu untuk dianalisis.", icon="🚨")
+
 
