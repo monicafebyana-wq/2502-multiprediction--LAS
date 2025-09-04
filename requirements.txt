@@ -4,6 +4,7 @@ Pillow
 streamlit
 regex
 tokenizers
-tensorflow==2.15.0
+ensorflow>=2.15.0,<2.16.0
 tf-keras
 transformers==4.30.2
+
