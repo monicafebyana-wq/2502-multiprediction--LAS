@@ -178,7 +178,7 @@ def main():
             else:
                 if st.button(page_name, use_container_width=True):
                     st.session_state.active_page = page_name
-                    st.experimental_rerun()
+                    st.rerun()
 
     select_page = PAGES[st.session_state.active_page]
     
@@ -187,4 +187,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
