@@ -1,4 +1,5 @@
-tensorflow
+tensorflow==2.15.0
+tf-keras==2.15.0
 numpy
 transformers
 tokenizers
@@ -6,4 +7,5 @@ huggingface-hub
 streamlit
 Pillow
 regex
+
 
