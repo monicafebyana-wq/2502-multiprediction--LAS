@@ -1,9 +1,10 @@
 huggingface-hub
-keras
 numpy
 Pillow
 streamlit
 regex
-tensorflow
+tensorflow==2.15.0
+tf-keras
 tokenizers
 transformers
+
