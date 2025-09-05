@@ -152,7 +152,7 @@ def app():
     st.markdown("---")
     st.markdown("### Pilih model", unsafe_allow_html=True)
     option = st.selectbox(
-        " ",
+        "Pilihlah model untuk memprediksi gambar mu!",
         options=["Basic Model", "Pretrained Model"],
         placeholder="Pilih model..."
     )
@@ -183,6 +183,7 @@ def app():
             display_pred(image, prediction)
     else:
         st.info("Menunggu Anda mengunggah foto makanan lezat.", icon="👆")
+
 
 
 
