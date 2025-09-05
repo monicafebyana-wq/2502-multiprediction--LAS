@@ -233,7 +233,7 @@ def apply_custom_css():
 def main():
     apply_custom_css()
 
-    st.markdown("<h1 style='text-align: center; margin-bottom: 2rem;'>Aplikasi Prediksi Multi Model</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; margin-bottom: 2rem; color: #4a90e2'>Aplikasi Prediksi Multi Model</h1>", unsafe_allow_html=True)
 
     if "active_page" not in st.session_state:
         st.session_state.active_page = "Home"
@@ -255,6 +255,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
