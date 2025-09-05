@@ -9,7 +9,7 @@ from tensorflow.keras.applications import ResNet50
 
 INPUT_SHAPE = (128, 128, 3)
 
-FOOD_CLASSES = [
+food_label = [
     'apple_pie', 'baby_back_ribs', 'baklava', 'beef_carpaccio', 'beef_tartare',
     'beet_salad', 'beignets', 'bibimbap', 'bread_pudding', 'breakfast_burrito',
     'bruschetta', 'caesar_salad', 'cannoli', 'caprese_salad', 'carrot_cake',
@@ -60,7 +60,7 @@ def display_pred(image, prediction):
             predicted_class_index = np.argmax(prediction)
             confidence = np.max(prediction)
             
-            predicted_class_name = FOOD_CLASSES[predicted_class_index]
+            predicted_class_name = food_label[predicted_class_index]
             
             formatted_class_name = predicted_class_name.replace('_', ' ').title()
             
@@ -183,6 +183,7 @@ def app():
             display_pred(image, prediction)
     else:
         st.info("Menunggu Anda mengunggah foto makanan lezat.", icon="👆")
+
 
 
 
