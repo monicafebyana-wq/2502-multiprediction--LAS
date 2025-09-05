@@ -75,7 +75,7 @@ def preprocess_image(img):
 def display_pred(image, confidence):
     col1, col2 = st.columns([1, 1], gap="large")
     with col1:
-        st.image(image, caption='Gambar yang Anda Unggah', use_column_width=True)
+        st.image(image, caption='Gambar yang Anda Unggah', use container_width=True)
 
     with col2:
         with st.spinner('Model sedang memprediksi...'):
@@ -139,4 +139,5 @@ def app():
             display_pred(image, confidence)
     else:
         st.info("Menunggu Anda untuk mengunggah gambar.", icon="👆")
+
 
