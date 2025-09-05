@@ -91,7 +91,7 @@ def display_pred(image, confidence):
             st.markdown(f"""
                 <div class="prediction-card">
                     <h3>🤔 Sepertinya...</h3>
-                    <p class="result-text">{emoji} Ini adalah <strong>{label}</strong>!</p>
+                    <h2>{emoji} Ini adalah <strong>{label}</strong>!</h2>
                     <p class="confidence-text">Tingkat Keyakinan Model</p>
                     <div class="progress-bar-container">
                         <div class="progress-bar-fill" style="width: {confidence_percent:.2f}%;">
@@ -139,6 +139,7 @@ def app():
             display_pred(image, confidence)
     else:
         st.info("Menunggu Anda untuk mengunggah gambar.", icon="👆")
+
 
 
 
