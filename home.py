@@ -9,7 +9,7 @@ def app():
                 <p class="feature-icon">🐾</p>
                 <p class="feature-title">Anjing vs Kucing</p>
                 <p class="feature-description">
-                    Unggah gambar anjing atau kucing, dan biarkan model Computer Vision kami yang membedakannya.
+                    Unggah gambar anjing atau kucing, dan biarkan model yang membedakannya.
                 </p>
             </div>
         """, unsafe_allow_html=True)
@@ -20,7 +20,7 @@ def app():
                 <p class="feature-icon">🍔</p>
                 <p class="feature-title">101 Jenis Makanan</p>
                 <p class="feature-description">
-                    Punya foto makanan? Model kami dapat mengenali 101 hidangan berbeda dari seluruh dunia.
+                    Punya foto makanan? Unggah foto makanan mu dan model kami akan mengenalinya.
                 </p>
             </div>
         """, unsafe_allow_html=True)
@@ -31,10 +31,11 @@ def app():
                 <p class="feature-icon">✍️</p>
                 <p class="feature-title">Analisis Sentimen</p>
                 <p class="feature-description">
-                    Analisis emosi di balik teks. Model NLP berbasis Transformer kami akan menentukan apakah sentimennya positif, negatif, atau netral.
+                    Analisis emosi pada teks. Apakah tulisan mu berkonotasi SADNESS, ANGER, SUPPORT, HOPE, atau DISAPPOINTMENT.
                 </p>
             </div>
         """, unsafe_allow_html=True)
+
 
 
 
