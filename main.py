@@ -41,7 +41,7 @@ def apply_custom_css():
                 cursor: pointer;
                 transition: all 0.3s ease-in-out;
                 font-weight: 600;
-                font-size: 1rem;
+                font-size: 1rem !important;
                 border: none;
                 box-shadow: 6px 6px 12px #c5c9d2, -6px -6px 12px #fbffff;
                 width: 100%;
@@ -75,7 +75,7 @@ def apply_custom_css():
                 padding: 0.75rem 1.5rem;
                 border-radius: 2rem;
                 font-weight: 600;
-                font-size: 1rem;
+                font-size: 1rem !important;
                 border: none;
                 box-shadow: inset 4px 4px 8px #3b73b5, inset -4px -4px 8px #59adff;
                 width: 100%; 
@@ -91,13 +91,13 @@ def apply_custom_css():
                 margin-top: 2rem;
             }
             .result-text {
-                font-size: 2.2rem;
+                font-size: 2.2rem !important;
                 font-weight: 600;
                 margin: 1rem 0;
                 color: #2c3e50;
             }
             .confidence-text {
-                font-size: 1.1rem;
+                font-size: 1.1rem !important;
                 color: #5a677d;
                 margin-bottom: 0.5rem;
             }
@@ -122,7 +122,7 @@ def apply_custom_css():
                 border-radius: 0.75rem;
                 border: 1px solid #ced4da;
                 padding: 1rem;
-                font-size: 1.1rem;
+                font-size: 1.1rem !important;
                 min-height: 150px;
                 box-shadow: 0 4px 6px rgba(0,0,0,0.05);
             }
@@ -136,15 +136,15 @@ def apply_custom_css():
                 text-align: center;
             }
             .result-emoji { 
-                font-size: 5rem; 
+                font-size: 5rem !important; 
             }
             .prediction-text {
-                font-size: 1.5rem;
+                font-size: 1.5rem !important;
                 color: #5a677d;
                 margin-bottom: 0;
             }
             .prediction-label {
-                font-size: 2.8rem;
+                font-size: 2.8rem !important;
                 font-weight: bold;
                 margin-top: 0;
             }
@@ -160,7 +160,7 @@ def apply_custom_css():
                 margin-bottom: 0.5rem;
             }
             .title-icon {
-                font-size: 2.5rem;
+                font-size: 2.5rem !important;
                 vertical-align: middle;
             }
             .uploaded-image img {
@@ -172,13 +172,13 @@ def apply_custom_css():
                 transform: scale(1.05);
             }
             .prediction-text {
-                font-size: 2.2rem;
+                font-size: 2.2rem !important;
                 font-weight: bold;
                 color: #4a4a4a;
                 margin-bottom: 0.5rem;
             }
             .confidence-text {
-                font-size: 1.2rem;
+                font-size: 1.2rem !important;
                 color: #6c757d;
             }
             .main-container {
@@ -192,12 +192,12 @@ def apply_custom_css():
                 margin-bottom: 2rem;
             }
             .hero-title {
-                font-size: 3.5rem;
+                font-size: 3.5rem !important;
                 font-weight: bold;
                 color: #212529;
             }
             .hero-subtitle {
-                font-size: 1.5rem;
+                font-size: 1.5rem !important;
                 color: #495057;
                 margin-top: -1rem;
             }
@@ -216,15 +216,15 @@ def apply_custom_css():
             }
             .feature-icon {
                 font-size: 4rem !important;
-                margin-bottom: 16px;
+                margin-bottom: 1rem;
             }
             .feature-title {
-                font-size: 1.75rem;
+                font-size: 1.75rem !important;
                 font-weight: bold;
                 margin-bottom: 0.5rem;
             }
             .feature-description {
-                font-size: 1.1rem;
+                font-size: 1.1rem !important;
                 color: #6c757d;
             }
         </style>
@@ -255,6 +255,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
