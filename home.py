@@ -17,7 +17,7 @@ def app():
     with col2:
         st.markdown("""
             <div class="feature-card">
-                <p class="feature-icon">🍔</p>
+                <h4>🍔</h4>
                 <p class="feature-title">101 Jenis Makanan</p>
                 <p class="feature-description">
                     Punya foto makanan? Model kami dapat mengenali 101 hidangan berbeda dari seluruh dunia.
@@ -35,6 +35,7 @@ def app():
                 </p>
             </div>
         """, unsafe_allow_html=True)
+
 
 
 
