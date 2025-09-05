@@ -1,57 +1,6 @@
 import streamlit as st
 
 def app():
-    st.markdown("""
-        <style>
-            .main-container {
-                padding: 2rem 1rem;
-            }
-            .hero-section {
-                text-align: center;
-                padding: 3rem 1rem;
-                background-color: #f8f9fa;
-                border-radius: 1rem;
-                margin-bottom: 2rem;
-            }
-            .hero-title {
-                font-size: 3.5rem;
-                font-weight: bold;
-                color: #212529;
-            }
-            .hero-subtitle {
-                font-size: 1.5rem;
-                color: #495057;
-                margin-top: -1rem;
-            }
-            .feature-card {
-                background-color: #ffffff;
-                border-radius: 1rem;
-                padding: 2.5rem;
-                text-align: center;
-                box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-                transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-                height: 100%; /* Membuat kartu memiliki tinggi yang sama */
-            }
-            .feature-card:hover {
-                transform: translateY(-5px);
-                box-shadow: 0 12px 24px rgba(0,0,0,0.15);
-            }
-            .feature-icon {
-                font-size: 4rem;
-                margin-bottom: 1rem;
-            }
-            .feature-title {
-                font-size: 1.75rem;
-                font-weight: bold;
-                margin-bottom: 0.5rem;
-            }
-            .feature-description {
-                font-size: 1.1rem;
-                color: #6c757d;
-            }
-        </style>
-    """, unsafe_allow_html=True)
-
     col1, col2, col3 = st.columns(3, gap="large")
 
     with col1:
@@ -86,5 +35,6 @@ def app():
                 </p>
             </div>
         """, unsafe_allow_html=True)
+
 
 
