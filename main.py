@@ -163,13 +163,6 @@ def apply_custom_css():
                 font-size: 2.5rem;
                 vertical-align: middle;
             }
-            .stFileUploader {
-                text-align: center;
-                border: 2px dashed #3b82f6;
-                border-radius: 1rem;
-                padding: 2rem;
-                background-color: #f0f8ff;
-            }
             .uploaded-image img {
                 border-radius: 1rem;
                 box-shadow: 0 10px 20px rgba(0,0,0,0.15);
@@ -262,6 +255,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
