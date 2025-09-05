@@ -1,6 +1,6 @@
 import streamlit as st
 import tensorflow as tf
-from tensorflow import keras
+import tf_keras as keras
 import re
 from huggingface_hub import hf_hub_download
 from transformers import AutoTokenizer
@@ -206,5 +206,6 @@ def app():
             display_result_card(pred_class)
         else:
             st.error("Harap masukkan teks terlebih dahulu untuk dianalisis.", icon="🚨")
+
 
 
