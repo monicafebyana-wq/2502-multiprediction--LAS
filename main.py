@@ -19,7 +19,6 @@ PAGES = {
 def apply_custom_css():
     st.markdown("""
         <style>
-            /* Mengatur kontainer kolom agar tombol berada di tengah */
             div[data-testid="column"] {
                 display: flex;
                 justify-content: center;
@@ -27,7 +26,7 @@ def apply_custom_css():
             .st-emotion-cache-13ln4pb {
                 display: flex;
                 justify-content: center;
-                gap: 0.8rem; /* Memberi jarak antar tombol */
+                gap: 0.8rem;
             }
 
             /* Gaya untuk TOMBOL INAKTIF (bisa diklik) */
@@ -46,7 +45,7 @@ def apply_custom_css():
                 font-size: 1rem;
                 border: none;
                 box-shadow: 6px 6px 12px #c5c9d2, -6px -6px 12px #fbffff;
-                width: 100%; /* Memastikan tombol mengisi kolomnya */
+                width: 100%;
             }
             
             .stButton button:hover {
@@ -72,15 +71,15 @@ def apply_custom_css():
                 align-items: center;
                 justify-content: center;
                 margin: 0.75rem 0;
-                background-color: #4a90e2; /* Warna biru untuk status aktif */
-                color: #ffffff; /* Teks putih untuk kontras */
+                background-color: #4a90e2; 
+                color: #ffffff;
                 padding: 0.75rem 1.5rem;
                 border-radius: 2rem;
                 font-weight: 600;
                 font-size: 1rem;
                 border: none;
                 box-shadow: inset 4px 4px 8px #3b73b5, inset -4px -4px 8px #59adff;
-                width: 100%; /* Memastikan elemen mengisi kolomnya */
+                width: 100%; 
                 text-align: center;
             }
             .prediction-card {
@@ -137,7 +136,9 @@ def apply_custom_css():
                 border-top: 10px solid;
                 text-align: center;
             }
-            .result-emoji { font-size: 5rem; }
+            .result-emoji { 
+                font-size: 5rem; 
+            }
             .prediction-text {
                 font-size: 1.5rem;
                 color: #5a677d;
@@ -158,6 +159,43 @@ def apply_custom_css():
                 display: flex;
                 align-items: center;
                 margin-bottom: 0.5rem;
+            }
+            .title-icon {
+                font-size: 2.5rem;
+                vertical-align: middle;
+            }
+            .stFileUploader {
+                text-align: center;
+                border: 2px dashed #3b82f6;
+                border-radius: 1rem;
+                padding: 2rem;
+                background-color: #f0f8ff; /* AliceBlue */
+            }
+            .uploaded-image img {
+                border-radius: 1rem;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+                transition: transform 0.3s ease-in-out;
+            }
+            .uploaded-image img:hover {
+                transform: scale(1.05);
+            }
+            .result-card {
+                background-color: #ffffff;
+                border-radius: 1rem;
+                padding: 2rem;
+                text-align: center;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+                border-left: 8px solid #f97316; /* Warm Orange Accent */
+            }
+            .prediction-text {
+                font-size: 2.2rem;
+                font-weight: bold;
+                color: #4a4a4a;
+                margin-bottom: 0.5rem;
+            }
+            .confidence-text {
+                font-size: 1.2rem;
+                color: #6c757d;
             }
         </style>
     """, unsafe_allow_html=True)
@@ -187,5 +225,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
