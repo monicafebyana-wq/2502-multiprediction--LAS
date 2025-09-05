@@ -1,9 +1,6 @@
 import streamlit as st
 
 def app():
-    """Fungsi untuk halaman beranda."""
-
-    # --- CSS Kustom untuk Halaman Beranda ---
     st.markdown("""
         <style>
             .main-container {
@@ -89,4 +86,5 @@ def app():
                 </p>
             </div>
         """, unsafe_allow_html=True)
+
 
