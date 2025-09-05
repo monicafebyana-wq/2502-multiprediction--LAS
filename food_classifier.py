@@ -52,7 +52,7 @@ def display_pred(image, prediction):
     col1, col2 = st.columns([1, 1], gap="large")
 
     with col1:
-        st.image(image, caption='Gambar yang Anda Unggah', use_column_width=True,
+        st.image(image, caption='Gambar yang Anda Unggah', use container_width=True,
                  output_format='PNG')
 
     with col2:
@@ -148,48 +148,6 @@ def load_pretrained_model(path):
 
 
 def app():
-    st.markdown("""
-        <style>
-            .title-icon {
-                font-size: 2.5rem;
-                vertical-align: middle;
-            }
-            .stFileUploader {
-                text-align: center;
-                border: 2px dashed #3b82f6;
-                border-radius: 1rem;
-                padding: 2rem;
-                background-color: #f0f8ff; /* AliceBlue */
-            }
-            .uploaded-image img {
-                border-radius: 1rem;
-                box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-                transition: transform 0.3s ease-in-out;
-            }
-            .uploaded-image img:hover {
-                transform: scale(1.05);
-            }
-            .result-card {
-                background-color: #ffffff;
-                border-radius: 1rem;
-                padding: 2rem;
-                text-align: center;
-                box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-                border-left: 8px solid #f97316; /* Warm Orange Accent */
-            }
-            .prediction-text {
-                font-size: 2.2rem;
-                font-weight: bold;
-                color: #4a4a4a;
-                margin-bottom: 0.5rem;
-            }
-            .confidence-text {
-                font-size: 1.2rem;
-                color: #6c757d;
-            }
-        </style>
-    """, unsafe_allow_html=True)
-    
     st.title("Klasifikasi 101 Jenis Makanan")
     st.markdown("---")
     st.markdown("### Pilih model", unsafe_allow_html=True)
@@ -225,4 +183,5 @@ def app():
             display_pred(image, prediction)
     else:
         st.info("Menunggu Anda mengunggah foto makanan lezat.", icon="👆")
+
 
