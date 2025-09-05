@@ -215,8 +215,8 @@ def apply_custom_css():
                 box-shadow: 0 12px 24px rgba(0,0,0,0.15);
             }
             .feature-icon {
-                font-size: 64px;
-                margin-bottom: 16pc;
+                font-size: 4rem !important;
+                margin-bottom: 16px;
             }
             .feature-title {
                 font-size: 1.75rem;
@@ -255,6 +255,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
