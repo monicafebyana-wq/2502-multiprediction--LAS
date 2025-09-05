@@ -16,6 +16,10 @@ PAGES = {
     "Analisis Sentimen": nlp_transformer
 }
 
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+
 def main():
     local_css("style.css")
     st.markdown("<h1 style='text-align: center; margin-bottom: 2rem; color: #4a90e2'>Aplikasi Prediksi Multi Model</h1>", unsafe_allow_html=True)
@@ -40,6 +44,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
