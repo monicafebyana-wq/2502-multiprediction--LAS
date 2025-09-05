@@ -52,7 +52,7 @@ def display_pred(image, prediction):
     col1, col2 = st.columns([1, 1], gap="large")
 
     with col1:
-        st.image(image, caption='Gambar yang Anda Unggah', use container_width=True,
+        st.image(image, caption='Gambar yang Anda Unggah', use_container_width=True,
                  output_format='PNG')
 
     with col2:
@@ -183,5 +183,6 @@ def app():
             display_pred(image, prediction)
     else:
         st.info("Menunggu Anda mengunggah foto makanan lezat.", icon="👆")
+
 
 
