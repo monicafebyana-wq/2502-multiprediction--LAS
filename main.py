@@ -5,7 +5,7 @@ import food_classifier
 import nlp_transformer
 
 st.set_page_config(
-    page_title="Multi-Model Prediction App",
+    page_title="Multi Model Prediction App",
     layout="wide"
 )
 
@@ -29,7 +29,6 @@ def apply_custom_css():
                 gap: 0.8rem;
             }
 
-            /* Gaya untuk TOMBOL INAKTIF (bisa diklik) */
             .stButton button {
                 display: inline-flex;
                 align-items: center;
@@ -169,7 +168,7 @@ def apply_custom_css():
                 border: 2px dashed #3b82f6;
                 border-radius: 1rem;
                 padding: 2rem;
-                background-color: #f0f8ff; /* AliceBlue */
+                background-color: #f0f8ff;
             }
             .uploaded-image img {
                 border-radius: 1rem;
@@ -178,14 +177,6 @@ def apply_custom_css():
             }
             .uploaded-image img:hover {
                 transform: scale(1.05);
-            }
-            .result-card {
-                background-color: #ffffff;
-                border-radius: 1rem;
-                padding: 2rem;
-                text-align: center;
-                box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-                border-left: 8px solid #f97316; /* Warm Orange Accent */
             }
             .prediction-text {
                 font-size: 2.2rem;
@@ -224,7 +215,7 @@ def apply_custom_css():
                 text-align: center;
                 box-shadow: 0 8px 16px rgba(0,0,0,0.1);
                 transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-                height: 100%; /* Membuat kartu memiliki tinggi yang sama */
+                height: 100%; 
             }
             .feature-card:hover {
                 transform: translateY(-5px);
@@ -271,6 +262,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
